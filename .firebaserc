@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cristiancosano-com": {
+      "hosting": {
+        "cristiancosano": [
+          "cristiancosano"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cristiancosano-com"
+  }
+}

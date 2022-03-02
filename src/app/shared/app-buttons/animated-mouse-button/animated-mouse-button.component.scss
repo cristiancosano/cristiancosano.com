@@ -1,0 +1,33 @@
+#mouse-button{
+    width: 100%;
+    margin: 25px auto;
+    & a {
+        height: 42px;
+        width: 30px;
+        display: block;
+        border: 2px solid var(--secondary-color);
+        margin: auto;
+        position: relative;
+        border-radius: 50rem;
+        & span{
+            background: #495057;
+            height: 8px;
+            margin-left: auto;
+            margin-right: auto;
+            top: 34px;
+            width: 2px;
+            position: relative;
+            display: block;
+            animation: mover 1s infinite alternate;
+        }
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}

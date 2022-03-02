@@ -1,0 +1,14 @@
+<section id="welcome">
+    <div id="text">
+        <h6>{{data?.subtitle}}</h6>
+        <h1>{{data?.title}}</h1>
+        <p>{{data?.description}}</p>
+        <div>
+            <app-default-button [outline]="data?.button1?.type == 'outline'" [icon]="data?.button1?.icon">{{data?.button1?.name}}</app-default-button>
+            <app-default-button [outline]="data?.button2?.type == 'outline'" [icon]="data?.button2?.icon">
+                {{data?.button2?.name}}
+            </app-default-button>
+        </div>
+    </div>
+    <app-animated-mouse-button></app-animated-mouse-button>
+</section>
