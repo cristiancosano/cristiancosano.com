@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Round');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+
+/* Font sizes */
+:root {
+  --font-xs: .75rem;
+  --font-s: .875rem;
+  --font-m: 1rem;
+  --font-heading-s: .875rem;
+  --font-heading-m: 1rem;
+  --font-heading-l: 1.25rem;
+  --font-heading-xl: 1.5rem;
+  --font-heading-2xl: 2rem;
+  --font-heading-3xl: 5rem;
+}
+
+/* Line heights */
+:root {
+  --line-height-xs: 1rem;
+  --line-height-s: 1.25rem;
+  --line-height-m: 1.5rem;
+  --line-height-heading-s: 1.25rem;
+  --line-height-heading-m: 1.5rem;
+  --line-height-heading-l: 1.5rem;
+  --line-height-heading-xl: 1.75rem;
+  --line-height-heading-2xl: 2.5rem;
+  --line-height-heading-3xl: 3rem;
+}
+
+/* Letter spacing */
+:root {
+  --letter-spacing-xs: 1.25%;
+  --letter-spacing-s: 1%;
+  --letter-spacing-m: 0.5%;
+  --letter-spacing-heading-s: 1.5%;
+  --letter-spacing-heading-m: 0%;
+  --letter-spacing-heading-l: -4%;
+  --letter-spacing-heading-xl: -4%;
+  --letter-spacing-heading-2xl: -4%;
+  --letter-spacing-heading-3xl: -4%;
+}
+
+/* Paragraph spacing */
+:root {
+  --paragraph-spacing: .5rem;
+}
+
+/* Colors */
+:root{
+  --text-color: #999;
+  --heading-color: var(#fff)
+}
+
+/* Font weights */
+:root{
+  --font-weight-thin: 100;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 590;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+}
+
+.text, p, small, body {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: var(--paragraph-spacing);
+    color: var(--text-color);
+    font-weight: var(--font-weight-regular);
+}
+
+/* Body XS */
+.text-xs {
+  font-size: var(--font-xs);
+  line-height: var(--line-height-xs);
+  letter-spacing: var(--letter-spacing-xs);
+}
+
+/* Body S */
+.text-s, small {
+  font-size: var(--font-s);
+  line-height: var(--line-height-s);
+  letter-spacing: var(--letter-spacing-s);
+}
+
+/* Body M */
+.text-m, p, body {
+  font-size: var(--font-m);
+  line-height: var(--line-height-m);
+  letter-spacing: var(--letter-spacing-m);
+}
+
+.heading, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    margin-top: 0;
+    margin-bottom: var(--paragraph-spacing);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+}
+/* Heading S */
+.heading-s, h6 {
+  font-size: var(--font-heading-s);
+  line-height: var(--line-height-heading-s);
+  letter-spacing: var(--letter-spacing-heading-s);
+}
+
+/* Heading M */
+.heading-m, h5 {
+  font-size: var(--font-heading-m);
+  line-height: var(--line-height-heading-m);
+  letter-spacing: var(--letter-spacing-heading-m);
+}
+
+/* Heading L */
+.heading-l, h4 {
+    font-size: var(--font-heading-l);
+    line-height: var(--line-height-heading-l);
+    letter-spacing: var(--letter-spacing-heading-l);
+}
+
+/* Heading XL */
+.heading-xl, h3 {
+    font-size: var(--font-heading-xl);
+    line-height: var(--line-height-heading-xl);
+    letter-spacing: var(--letter-spacing-heading-xl);
+}
+
+/* Heading 2XL */
+.heading-2xl, h2 {
+  font-size: 48px;
+  line-height: 60px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 33px;
+}
+
+/* Heading 3XL */
+.heading-3xl, h1 {
+  font-size: 78px;
+  letter-spacing: -0.2px;
+  line-height: 90px;
+  margin-bottom: 43px;
+  font-weight: 300;
+}
+
+.heading-icon{
+    margin-bottom: var(--paragraph-spacing);
+}
+
+.heading-icon-wrapper{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    img, svg, i, .icon {
+        margin-bottom: var(--paragraph-spacing);
+    }
+}
+
+.heading-actions-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .5rem;
+  & > .title {
+      max-width: 38rem;
+  }
+}
+
+.text-primary{
+    color: var(--primary-color);
+}
