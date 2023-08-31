@@ -5,7 +5,7 @@
             <p class="job">Full Stack Engineer</p>
         </header>
         <div class="content">
-            <NuxtPicture :src="imageUrl" sizes="md:50vw lg:400px"  loading="lazy" :img-attrs="{draggable: false}" />
+            <img :src="imageUrl" draggable="false" />
             <p>hello@cristiancosano.com</p>
             <p>Base in Cordoba, Spain</p>
             <p class="copyright">&copy; Cristian Cosano. All rights reserved</p>
