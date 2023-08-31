@@ -4,7 +4,6 @@ export default defineNuxtConfig({
         "@/assets/styles/global.scss",
     ],
     modules: [
-        '@nuxt/image-edge',
         'nuxt-icon',
         '@vueuse/nuxt',
     ],
@@ -12,7 +11,4 @@ export default defineNuxtConfig({
         '~/components',
         { path: 'components/home-section', prefix: 'HomeSection' },
     ],
-    image: {
-        none: {}
-    },
 })
